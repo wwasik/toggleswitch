@@ -1,0 +1,30 @@
+.switch {
+    cursor: pointer;
+}
+
+.switch_rail { 
+    min-width: 40px;
+    min-height: 15px;
+    width: 10px;
+    height: 15px;
+    border-radius: 5px;
+    border: #767676 thin solid;
+    background-color: #a8a8a8;
+    position: relative;
+}
+.switch_lever { 
+    min-width: 10px;
+    min-height: 15px;
+    width: 20px;
+    height: 15px;
+    border-radius: 3px;
+    background-color: #F6F6F6;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.on {
+    background-color: green;
+}
+

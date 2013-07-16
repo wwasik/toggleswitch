@@ -9,8 +9,16 @@
     </head>
     <body>
         <script type="text/javascript"> 
+            function on() {
+                alert("I'm on!");
+            }
+            
+            function off() {
+                alert("I'm off!");
+            }
+            
             $(document).ready(function() {
-                $('#switch').toggleswitch();
+                $('#switch').toggleswitch(on, off);
             });
         </script>
         

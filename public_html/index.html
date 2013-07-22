@@ -9,6 +9,8 @@
     </head>
     <body>
         <script type="text/javascript"> 
+            var ts1, ts2;
+            
             function on() {
                 alert("I'm on!");
             }
@@ -17,14 +19,20 @@
                 alert("I'm off!");
             }
             
+            function resetSwitches() {
+                ts1.reset();
+                ts2.reset();
+            }
+            
             $(document).ready(function() {
-                $('#switch1').toggleswitch(on, off);
-                $('#switch2').toggleswitch();
+                ts1 = $('#switch1').toggleswitch(on, off);
+                ts2 = $('#switch2').toggleswitch();
             });
         </script>
         
         <div id="switch1"></div>
         <br/>
         <div id="switch2"></div>
+        <button id="reset" onclick="resetSwitches()">Reset</button>
     </body>
 </html>
